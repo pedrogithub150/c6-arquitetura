@@ -17,7 +17,7 @@ pipeline
             {
 		sh "docker rmi -f ${DOCKER_IMAGE}"
 		sh "docker build -t ${DOCKER_IMAGE} ."
-                sh "docker login -u PedroSJ -p AlbiOffice32@ localhost:8082 "
+                sh "docker login -u admin -p vD5tQ3fcTrF8dud localhost:8082 "
 		sh "docker tag ${DOCKER_IMAGE} localhost:8082/${DOCKER_IMAGE}"
 		sh "docker push localhost:8082/${DOCKER_IMAGE}"
                 sh "javac *.java"
