@@ -20,6 +20,7 @@ pipeline
 
         stage('Envia o artefacto para o Nexus'){
             steps
+                {
                 sh "docker login -u admin -p vD5tQ3fcTrF8dud localhost:8082 "
 		        sh "docker tag ${DOCKER_IMAGE} localhost:8082/${DOCKER_IMAGE}"
 		        sh "docker push localhost:8082/${DOCKER_IMAGE}"
@@ -44,4 +45,3 @@ pipeline
             }
         }
     }
-}
