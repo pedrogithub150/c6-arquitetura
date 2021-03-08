@@ -1,4 +1,4 @@
 # c6-arquitetura
 
 
-teste 10000
+teste 1.0
