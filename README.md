@@ -1,4 +1,4 @@
 # c6-arquitetura
 
 
-teste 500
+teste 6.0
