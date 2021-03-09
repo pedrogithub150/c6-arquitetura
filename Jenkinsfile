@@ -30,7 +30,7 @@ pipeline
             }
         }
 		
-        stage("faz a análise sonarqube") {
+        stage("Faz a análise SonarQube") {
             environment { scannerHome = tool 'sonarqube' }
             steps {
                 withSonarQubeEnv('sonarqube') {
