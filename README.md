@@ -44,6 +44,8 @@ docker network connect jenkins sonarqube
 docker network connect jenkins nexus
 docker network connect jenkins jenkins_docker
 
+.
+
 
 
 
