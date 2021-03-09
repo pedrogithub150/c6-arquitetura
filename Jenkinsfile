@@ -26,7 +26,7 @@ pipeline
 		        sh "docker push localhost:8082/${DOCKER_IMAGE}"
                 sh "javac *.java"
                 sh "jar cfe tarefaCalculadora.jar tarefaCalculadora ./*.class"
-                sh "curl -v -u 'admin:vD5tQ3fcTrF8dud' --upload calculator.jar http://nexus:8081/repository/raw-repository/"
+                sh "curl -v -u 'admin:vD5tQ3fcTrF8dud' --upload tarefaCalculadora.jar http://nexus:8081/repository/raw-repository/"
             }
         }
 		
